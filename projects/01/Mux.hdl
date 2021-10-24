@@ -15,4 +15,10 @@ CHIP Mux {
 
     PARTS:
     // Put your code here:
+    Xor(a=a, b=sel, out=xsela);
+    And(a=a, b=xsela, out=asel);
+    Not(in=sel, out=notsel);
+    Xor(a=notsel, b=b, out=xselb);
+    And(a=xselb, b=b, out=bsel);
+    Or(a=asel, b=bsel, out=out);
 }
