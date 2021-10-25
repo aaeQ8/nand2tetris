@@ -15,4 +15,128 @@ CHIP Mux16 {
 
     PARTS:
     // Put your code here:
+    /** Automated!!!!
+    j = """Xor(a=a[{}], b=sel, out=xsela{});
+    And(a=a[{}], b=xsela{}, out=asel{});
+    Not(in=sel, out=notsel{});
+    Xor(a=notsel{}, b=b[{}], out=xselb{});
+    And(a=xselb{}, b=b[{}], out=bsel{});
+    Or(a=asel{}, b=bsel{}, out=out[{}]);
+    """
+    for i in range(16):
+        for line in j.format(i,i,i,i,i,i,i,i,i,i,i,i,i,i,i).split('\n'):
+            print(line)
+    */
+
+    Xor(a=a[0], b=sel, out=xsela0);
+    And(a=a[0], b=xsela0, out=asel0);
+    Not(in=sel, out=notsel0);
+    Xor(a=notsel0, b=b[0], out=xselb0);
+    And(a=xselb0, b=b[0], out=bsel0);
+    Or(a=asel0, b=bsel0, out=out[0]);
+
+    Xor(a=a[1], b=sel, out=xsela1);
+    And(a=a[1], b=xsela1, out=asel1);
+    Not(in=sel, out=notsel1);
+    Xor(a=notsel1, b=b[1], out=xselb1);
+    And(a=xselb1, b=b[1], out=bsel1);
+    Or(a=asel1, b=bsel1, out=out[1]);
+
+    Xor(a=a[2], b=sel, out=xsela2);
+    And(a=a[2], b=xsela2, out=asel2);
+    Not(in=sel, out=notsel2);
+    Xor(a=notsel2, b=b[2], out=xselb2);
+    And(a=xselb2, b=b[2], out=bsel2);
+    Or(a=asel2, b=bsel2, out=out[2]);
+
+    Xor(a=a[3], b=sel, out=xsela3);
+    And(a=a[3], b=xsela3, out=asel3);
+    Not(in=sel, out=notsel3);
+    Xor(a=notsel3, b=b[3], out=xselb3);
+    And(a=xselb3, b=b[3], out=bsel3);
+    Or(a=asel3, b=bsel3, out=out[3]);
+
+    Xor(a=a[4], b=sel, out=xsela4);
+    And(a=a[4], b=xsela4, out=asel4);
+    Not(in=sel, out=notsel4);
+    Xor(a=notsel4, b=b[4], out=xselb4);
+    And(a=xselb4, b=b[4], out=bsel4);
+    Or(a=asel4, b=bsel4, out=out[4]);
+
+    Xor(a=a[5], b=sel, out=xsela5);
+    And(a=a[5], b=xsela5, out=asel5);
+    Not(in=sel, out=notsel5);
+    Xor(a=notsel5, b=b[5], out=xselb5);
+    And(a=xselb5, b=b[5], out=bsel5);
+    Or(a=asel5, b=bsel5, out=out[5]);
+
+    Xor(a=a[6], b=sel, out=xsela6);
+    And(a=a[6], b=xsela6, out=asel6);
+    Not(in=sel, out=notsel6);
+    Xor(a=notsel6, b=b[6], out=xselb6);
+    And(a=xselb6, b=b[6], out=bsel6);
+    Or(a=asel6, b=bsel6, out=out[6]);
+
+    Xor(a=a[7], b=sel, out=xsela7);
+    And(a=a[7], b=xsela7, out=asel7);
+    Not(in=sel, out=notsel7);
+    Xor(a=notsel7, b=b[7], out=xselb7);
+    And(a=xselb7, b=b[7], out=bsel7);
+    Or(a=asel7, b=bsel7, out=out[7]);
+
+    Xor(a=a[8], b=sel, out=xsela8);
+    And(a=a[8], b=xsela8, out=asel8);
+    Not(in=sel, out=notsel8);
+    Xor(a=notsel8, b=b[8], out=xselb8);
+    And(a=xselb8, b=b[8], out=bsel8);
+    Or(a=asel8, b=bsel8, out=out[8]);
+
+    Xor(a=a[9], b=sel, out=xsela9);
+    And(a=a[9], b=xsela9, out=asel9);
+    Not(in=sel, out=notsel9);
+    Xor(a=notsel9, b=b[9], out=xselb9);
+    And(a=xselb9, b=b[9], out=bsel9);
+    Or(a=asel9, b=bsel9, out=out[9]);
+
+    Xor(a=a[10], b=sel, out=xsela10);
+    And(a=a[10], b=xsela10, out=asel10);
+    Not(in=sel, out=notsel10);
+    Xor(a=notsel10, b=b[10], out=xselb10);
+    And(a=xselb10, b=b[10], out=bsel10);
+    Or(a=asel10, b=bsel10, out=out[10]);
+
+    Xor(a=a[11], b=sel, out=xsela11);
+    And(a=a[11], b=xsela11, out=asel11);
+    Not(in=sel, out=notsel11);
+    Xor(a=notsel11, b=b[11], out=xselb11);
+    And(a=xselb11, b=b[11], out=bsel11);
+    Or(a=asel11, b=bsel11, out=out[11]);
+
+    Xor(a=a[12], b=sel, out=xsela12);
+    And(a=a[12], b=xsela12, out=asel12);
+    Not(in=sel, out=notsel12);
+    Xor(a=notsel12, b=b[12], out=xselb12);
+    And(a=xselb12, b=b[12], out=bsel12);
+    Or(a=asel12, b=bsel12, out=out[12]);
+
+    Xor(a=a[13], b=sel, out=xsela13);
+    And(a=a[13], b=xsela13, out=asel13);
+    Not(in=sel, out=notsel13);
+    Xor(a=notsel13, b=b[13], out=xselb13);
+    And(a=xselb13, b=b[13], out=bsel13);
+    Or(a=asel13, b=bsel13, out=out[13]);
+
+    Xor(a=a[14], b=sel, out=xsela14);
+    And(a=a[14], b=xsela14, out=asel14);
+    Not(in=sel, out=notsel14);
+    Xor(a=notsel14, b=b[14], out=xselb14);
+    And(a=xselb14, b=b[14], out=bsel14);
+    Or(a=asel14, b=bsel14, out=out[14]);
+
+    Xor(a=a[15], b=sel, out=xsela15);
+    And(a=a[15], b=xsela15, out=asel15);
+    Not(in=sel, out=notsel15);
+    Xor(a=notsel15, b=b[15], out=xselb15);
+    And(a=xselb15, b=b[15], out=bsel15);
+    Or(a=asel15, b=bsel15, out=out[15]);
 }
